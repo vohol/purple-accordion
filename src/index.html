@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/head.html',{
+	"title":"Accordion"
+	})
+	<body>
+		@@include('html/header.html',{})
+		<main>
+
+			<section class="faq">
+				<div class="container">
+					<div class="faq__photo-wrapper">
+						<img class="faq__mobile-photo" src="@img/img-mobile.svg" alt="">
+						<img class="faq__desktop-photo" src="@img/img-main-desctop.svg" alt="">
+						<img class="faq__desktop-cube" src="@img/img-cube-desktop.svg" alt="">
+					</div>
+					<div class="faq__content">
+						<h1 class="faq__title">FAQ</h1>
+						<ul class="faq-list">
+							<li class="faq-list__item">
+								<div class="faq-list__summary-wrapper">
+									<h3 class="faq-list__summary">How many team members can I invite?</h3>
+									<svg class="faq-list__arrow-icon arrow-icon">
+										<use xlink:href="@img/icons/icons-mono.svg#arrow"></use>
+									</svg>
+								</div>
+							
+								<div class="faq-list__details-wrapper">
+									<p class="faq-list__details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse repellat cumque, dicta impedit maxime voluptatum nihil!</p>
+								</div>
+							</li>
+							<li class="faq-list__item active">
+								<div class="faq-list__summary-wrapper">
+									<h3 class="faq-list__summary">What is the maximum file upload size?</h3>
+									<svg class="faq-list__arrow-icon arrow-icon">
+										<use xlink:href="@img/icons/icons-mono.svg#arrow"></use>
+									</svg>
+								</div>
+								<div class="faq-list__details-wrapper">
+									<p class="faq-list__details">No more than 2GB. All files in your account 
+										must fit your allotted storage space.</p>
+								</div>
+							</li>
+							<li class="faq-list__item">
+								<div class="faq-list__summary-wrapper">
+									<h3 class="faq-list__summary">How do I reset my password?</h3>
+									<svg class="faq-list__arrow-icon arrow-icon">
+										<use xlink:href="@img/icons/icons-mono.svg#arrow"></use>
+									</svg>
+								</div>
+								<div class="faq-list__details-wrapper">
+									<p class="faq-list__details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse repellat cumque, dicta impedit maxime voluptatum nihil!</p>
+								</div>
+							</li>
+							<li class="faq-list__item">
+								<div class="faq-list__summary-wrapper">
+									<h3 class="faq-list__summary">Can I cancel my subscription?</h3>
+									<svg class="faq-list__arrow-icon arrow-icon">
+										<use xlink:href="@img/icons/icons-mono.svg#arrow"></use>
+									</svg>
+								</div>
+								<div class="faq-list__details-wrapper">
+									<p class="faq-list__details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse repellat cumque, dicta impedit maxime voluptatum nihil!</p>
+								</div>
+							</li>
+							<li class="faq-list__item">
+								<div class="faq-list__summary-wrapper">
+									<h3 class="faq-list__summary">Do you provide additional support?</h3>
+									<svg class="faq-list__arrow-icon arrow-icon">
+										<use xlink:href="@img/icons/icons-mono.svg#arrow"></use>
+									</svg>
+								</div>
+								<div class="faq-list__details-wrapper">
+									<p class="faq-list__details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse repellat cumque, dicta impedit maxime voluptatum nihil!</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+
+		</main>
+		@@include('html/footer.html',{})
+		<script src="js/app.min.js"></script>
+	</body>
+</html>

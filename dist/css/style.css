@@ -1,0 +1,305 @@
+@charset "UTF-8";
+
+/*Обнуление*/
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.container {
+  max-width: 920px;
+  margin: 0 auto;
+  background: #ffffff;
+}
+
+.faq {
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(#b068e9), to(#6463e7));
+  background: -o-linear-gradient(top, #b068e9 0%, #6463e7 100%);
+  background: linear-gradient(180deg, #b068e9 0%, #6463e7 100%);
+  padding: 148px 24px 0;
+}
+
+.no-webp .faq .container{
+  background-image: url("../img/background-mobile.png"); }
+
+.faq .container {
+  min-height: 535px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
+          box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
+  border-radius: 23px;
+  padding: 132px 24px 0;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.faq__mobile-photo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-55%, 21%);
+      -ms-transform: translate(-55%, 21%);
+          transform: translate(-55%, 21%);
+}
+
+.faq__desktop-photo {
+  display: none;
+}
+
+.faq__desktop-cube {
+  display: none;
+}
+
+.faq__title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  color: #1e1f36;
+  margin-bottom: 11px;
+}
+
+.faq__content {
+  max-width: 350px;
+  width: 100%;
+}
+
+.arrow-icon {
+  fill: transparent;
+  stroke: #f47b56;
+  width: 8px;
+  height: 4px;
+}
+
+.faq-list__item {
+  width: 100%;
+  border-bottom: 1px solid #e8e8ea;
+  padding-bottom: 19px;
+}
+
+.faq-list__summary-wrapper {
+  cursor: pointer;
+  padding: 19px 0 0 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.faq-list__item {
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: rotate 0.3s;
+  -o-transition: rotate 0.3s;
+  transition: rotate 0.3s;
+}
+
+.faq-list__item.active .faq-list__arrow-icon {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.faq-list__summary {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #4b4c5f;
+}
+
+.faq-list__details-wrapper {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  opacity: 0;
+}
+
+.faq-list__item.active .faq-list__details-wrapper {
+  max-height: 100vh;
+  opacity: 1;
+}
+
+.faq-list__details {
+  padding-top: 12px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #787887;
+}
+
+@media screen and (min-width: 1040px) {
+  .faq {
+    padding: 129px 0 0;
+  }
+
+  .no-webp .faq .container{
+    background-image: url("../img/background-desktop.png"); }
+
+  .faq .container {
+    min-height: 522px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 65px 95px 83px 0;
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 388px;
+  }
+
+  .faq__mobile-photo {
+    display: none;
+  }
+
+  .faq__photo-wrapper {
+    position: relative;
+  }
+
+  .faq__desktop-photo {
+    display: unset;
+    max-width: 388px;
+  }
+
+  .faq__desktop-cube {
+    width: 150px;
+    display: unset;
+    position: absolute;
+    left: -73px;
+    top: 135px;
+  }
+
+  .faq__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: #1e1f36;
+    margin-bottom: 11px;
+  }
+}
+
+.webp .faq .container{ background-image: url(../img/background-mobile.webp); }
+
+@media screen and (min-width: 1040px){
+
+  .webp .faq .container{ background-image: url(../img/background-desktop.webp); }
+}
