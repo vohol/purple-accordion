@@ -5,9 +5,6 @@ $color-pale-black: #4b4c5f;
 $color-more-pale-black: #787887;
 $color-pale-gray: #e8e8ea;
 
-@media screen and (min-width: 1040px) {
-}
-
 * {
   box-sizing: border-box;
   font-family: "Kumbh Sans", sans-serif;
@@ -23,7 +20,6 @@ $color-pale-gray: #e8e8ea;
   height: 100vh;
   background: linear-gradient(180deg, #b068e9 0%, #6463e7 100%);
   padding: 148px 24px 0;
-
   .container {
     min-height: 535px;
     display: flex;
@@ -82,20 +78,10 @@ $color-pale-gray: #e8e8ea;
     }
     &__photo-wrapper {
       position: relative;
-      // max-height: 359px;
-      // max-width: 388px;
-      // content: "";
-      // width: 100%;
-      // &::after {
-      //   content: "";
-      //   display: block;
-      //   padding-top: 100%;
-      // }
     }
     &__desktop-photo {
       display: unset;
       max-width: 388px;
-      //object-fit: cover;
     }
     &__desktop-cube {
       width: 150px;
@@ -140,7 +126,6 @@ $color-pale-gray: #e8e8ea;
     transform: rotate(0deg);
     transition: rotate 0.3s;
   }
-
   &__item.active &__arrow-icon {
     transform: rotate(180deg);
   }
@@ -154,20 +139,10 @@ $color-pale-gray: #e8e8ea;
     max-height: 0;
     overflow: hidden;
     transition: all 0.3s;
-
-    // max-height: 0;
-    // transform: scaleY(0);
-    // transform-origin: top;
-    // transition: max-height 0.2s, transform 0.2s;
-
-    // max-height: 0;
     opacity: 0;
-    // overflow: hidden;
-    // transition: max-height 1s, opacity 1s;
   }
   &__item.active &__details-wrapper {
     max-height: 100vh;
-    // transform: scaleY(1);
     opacity: 1;
   }
   &__details {
@@ -177,7 +152,4 @@ $color-pale-gray: #e8e8ea;
     line-height: 18px;
     color: $color-more-pale-black;
   }
-}
-
-@media screen and (min-width: 1040px) {
 }
