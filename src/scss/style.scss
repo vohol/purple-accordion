@@ -18,7 +18,7 @@ $color-pale-gray: #e8e8ea;
 
 .faq {
   background: linear-gradient(180deg, #b068e9 0%, #6463e7 100%);
-  padding: 148px 24px 50px;
+  padding: 148px 24px 150px;
   .container {
     min-height: 535px;
     display: flex;
@@ -150,8 +150,6 @@ $color-pale-gray: #e8e8ea;
     height: 0;
     overflow: hidden;
     transition: all 0.2s linear;
-  }
-  &__item.active &__details {
   }
   &__details {
     margin-top: -5px;

@@ -87,7 +87,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .faq {
   background: linear-gradient(180deg, #b068e9 0%, #6463e7 100%);
-  padding: 148px 24px 50px;
+  padding: 148px 24px 150px;
 }
 .faq .container {
   min-height: 535px;
