@@ -86,9 +86,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .faq {
-  height: 100vh;
   background: linear-gradient(180deg, #b068e9 0%, #6463e7 100%);
-  padding: 148px 24px 0;
+  padding: 148px 24px 50px;
 }
 .faq .container {
   min-height: 535px;
@@ -129,6 +128,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media screen and (min-width: 1040px) {
   .faq {
+    height: 100vh;
     padding: 129px 0 0;
   }
   .faq .container {
@@ -190,7 +190,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .faq-list__item {
   transform: rotate(0deg);
-  transition: rotate 0.3s;
+  transition: rotate 0.4s;
 }
 .faq-list__item.active .faq-list__arrow-icon {
   transform: rotate(180deg);
@@ -204,12 +204,10 @@ h1, h2, h3, h4, h5, h6 {
 .faq-list__details-wrapper {
   max-height: 0;
   overflow: hidden;
-  transition: all 0.3s;
-  opacity: 0;
+  transition: max-height 0.4s ease-out;
 }
 .faq-list__item.active .faq-list__details-wrapper {
   max-height: 100vh;
-  opacity: 1;
 }
 .faq-list__details {
   padding-top: 12px;

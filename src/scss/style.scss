@@ -17,9 +17,8 @@ $color-pale-gray: #e8e8ea;
 }
 
 .faq {
-  height: 100vh;
   background: linear-gradient(180deg, #b068e9 0%, #6463e7 100%);
-  padding: 148px 24px 0;
+  padding: 148px 24px 50px;
   .container {
     min-height: 535px;
     display: flex;
@@ -60,6 +59,7 @@ $color-pale-gray: #e8e8ea;
 
 @media screen and (min-width: 1040px) {
   .faq {
+    height: 100vh;
     padding: 129px 0 0;
     .container {
       min-height: 522px;
@@ -124,7 +124,7 @@ $color-pale-gray: #e8e8ea;
   }
   &__item {
     transform: rotate(0deg);
-    transition: rotate 0.3s;
+    transition: rotate 0.4s;
   }
   &__item.active &__arrow-icon {
     transform: rotate(180deg);
@@ -138,12 +138,12 @@ $color-pale-gray: #e8e8ea;
   &__details-wrapper {
     max-height: 0;
     overflow: hidden;
-    transition: all 0.3s;
-    opacity: 0;
+    transition: max-height .4s ease-out;
+    //opacity: 0;
   }
   &__item.active &__details-wrapper {
     max-height: 100vh;
-    opacity: 1;
+    //opacity: 1;
   }
   &__details {
     padding-top: 12px;
