@@ -18,7 +18,8 @@ $color-pale-gray: #e8e8ea;
 
 .faq {
   background: linear-gradient(180deg, #b068e9 0%, #6463e7 100%);
-  padding: 148px 24px 150px;
+  padding: 148px 24px 0;
+  height: 100vh;
   .container {
     min-height: 535px;
     display: flex;
@@ -59,7 +60,6 @@ $color-pale-gray: #e8e8ea;
 
 @media screen and (min-width: 1040px) {
   .faq {
-    height: 100vh;
     padding: 129px 0 0;
     .container {
       min-height: 522px;
