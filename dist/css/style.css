@@ -189,6 +189,13 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: space-between;
   transition: all 0.3s ease-in-out;
 }
+.faq-list__item.active .faq-list__summary {
+  font-weight: 700;
+  color: #1e1f36;
+}
+.faq-list__summary-wrapper:hover .faq-list__summary {
+  color: #F47B56;
+}
 .faq-list__item {
   transform: rotate(0deg);
   transition: rotate 0.3s ease-in-out;
@@ -201,6 +208,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 13px;
   line-height: 16px;
   color: #4b4c5f;
+  transition: all 0.3s ease-in-out;
 }
 .faq-list__details-wrapper {
   height: 0;
