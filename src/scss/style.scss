@@ -107,28 +107,30 @@ $color-pale-gray: #e8e8ea;
   stroke: #f47b56;
   width: 8px;
   height: 4px;
+  transition: all 0.3s ease-in-out;
 }
 
 .faq-list {
   &__item {
     width: 100%;
     border-bottom: 1px solid $color-pale-gray;
-    padding-bottom: 19px;
   }
   &__summary-wrapper {
     cursor: pointer;
-    padding: 19px 0 0 1px;
+    padding: 19px 0 19px 1px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    transition: all 0.3s ease-in-out;
   }
   &__item {
     transform: rotate(0deg);
-    transition: rotate 0.4s;
+    transition: rotate 0.3s ease-in-out;
   }
   &__item.active &__arrow-icon {
     transform: rotate(180deg);
   }
+
   &__summary {
     font-weight: 400;
     font-size: 13px;
@@ -136,17 +138,15 @@ $color-pale-gray: #e8e8ea;
     color: $color-pale-black;
   }
   &__details-wrapper {
-    max-height: 0;
+    height: 0;
     overflow: hidden;
-    transition: max-height .4s ease-out;
-    //opacity: 0;
+    transition: all 0.2s linear;
   }
-  &__item.active &__details-wrapper {
-    max-height: 100vh;
-    //opacity: 1;
+  &__item.active &__details {
   }
   &__details {
-    padding-top: 12px;
+    margin-top: -5px;
+    padding-bottom: 16px;
     font-weight: 400;
     font-size: 12px;
     line-height: 18px;

@@ -174,23 +174,24 @@ h1, h2, h3, h4, h5, h6 {
   stroke: #f47b56;
   width: 8px;
   height: 4px;
+  transition: all 0.3s ease-in-out;
 }
 
 .faq-list__item {
   width: 100%;
   border-bottom: 1px solid #e8e8ea;
-  padding-bottom: 19px;
 }
 .faq-list__summary-wrapper {
   cursor: pointer;
-  padding: 19px 0 0 1px;
+  padding: 19px 0 19px 1px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: all 0.3s ease-in-out;
 }
 .faq-list__item {
   transform: rotate(0deg);
-  transition: rotate 0.4s;
+  transition: rotate 0.3s ease-in-out;
 }
 .faq-list__item.active .faq-list__arrow-icon {
   transform: rotate(180deg);
@@ -202,15 +203,13 @@ h1, h2, h3, h4, h5, h6 {
   color: #4b4c5f;
 }
 .faq-list__details-wrapper {
-  max-height: 0;
+  height: 0;
   overflow: hidden;
-  transition: max-height 0.4s ease-out;
-}
-.faq-list__item.active .faq-list__details-wrapper {
-  max-height: 100vh;
+  transition: all 0.2s linear;
 }
 .faq-list__details {
-  padding-top: 12px;
+  margin-top: -5px;
+  padding-bottom: 16px;
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
