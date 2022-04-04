@@ -16,14 +16,12 @@ function tabsOpenClose(event) {
     //close faq item when it is active
     if (target.closest(summaryClass).parentNode.classList.contains('active')) {
       target.closest(summaryClass).parentNode.classList.remove('active');
-      console.log('kek');
     } 
     else {
       listItems.forEach(element => {
         element.classList.remove('active')
       });
       
-      console.log('mek');
       target.closest(summaryClass).parentNode.classList.add('active');
     }
   }
